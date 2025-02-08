@@ -5,8 +5,13 @@ The "Shared Task on Detecting AI-generated Product Reviews in Dravidian Language
 
 # Model Workflow
 
-![Untitled Diagram-Page-1](https://github.com/user-attachments/assets/9c04504f-dafd-45d5-9a18-4a886803f5b9)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9c04504f-dafd-45d5-9a18-4a886803f5b9" alt="Untitled Diagram-Page-1">
+</p>
 
-# Model used
+# Model Used
 
-![image](https://github.com/user-attachments/assets/4f378d56-13cf-4e4c-b97a-bf903a1e3d24)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4f378d56-13cf-4e4c-b97a-bf903a1e3d24" alt="Model Image">
+</p>
+
