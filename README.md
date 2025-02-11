@@ -18,10 +18,23 @@ The "Shared Task on Detecting AI-generated Product Reviews in Dravidian Language
   <img src="https://github.com/user-attachments/assets/9c04504f-dafd-45d5-9a18-4a886803f5b9" alt="Untitled Diagram-Page-1">
 </p>
 
-# Model Used
+## 🏆 Model Performance Comparison
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/4f378d56-13cf-4e4c-b97a-bf903a1e3d24" alt="Model Image">
-</p>
+| 🏷️ Models Used                  | 🇮🇳 Tamil Accuracy | 🇮🇳 Malayalam Accuracy |
+|----------------------------------|------------------|----------------------|
+| **BERT-Base-Multilingual-Cased** | 94%             | 94%                 |
+| **TF-IDF**                       | 81%             | 76%                 |
+| **Count Vectorizer**             | 83%             | 76%                 |
+| **XLM-RoBERTa-Large**            | **96%** 🔥      | **94%** 🔥          |
+
+### 🔍 Key Observations:
+- 🚀 **XLM-RoBERTa-Large** achieves the highest accuracy for both Tamil (**96%**) and Malayalam (**94%**).
+- 🤖 **BERT-Base-Multilingual-Cased** also performs well with **94%** in both languages.
+- 📊 **TF-IDF** and **Count Vectorizer** show lower performance, indicating that deep learning models are more effective for this task.
+
+---
+
+💡 *For best results, XLM-RoBERTa-Large is recommended for Tamil and Malayalam NLP tasks.*
+
 
 
