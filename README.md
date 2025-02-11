@@ -7,8 +7,8 @@ The "Shared Task on Detecting AI-generated Product Reviews in Dravidian Language
 
 | Language  | Rank | F1-Score |
 |-----------|------|----------|
-| **Tamil**      | 8    | **0.9298**  |
-| **Malayalam**  | 11   | **0.8797**  |
+| **Tamil**      | 🏆8    | **0.9298**  |
+| **Malayalam**  | 🏆11   | **0.8797**  |
 
 🎯 The model demonstrates high accuracy in both Tamil and Malayalam language tasks, achieving impressive F1-scores!
 
@@ -18,6 +18,7 @@ The "Shared Task on Detecting AI-generated Product Reviews in Dravidian Language
   <img src="https://github.com/user-attachments/assets/9c04504f-dafd-45d5-9a18-4a886803f5b9" alt="Untitled Diagram-Page-1">
 </p>
 ---
+
 # 📝 AI vs Human: Dravidian Language Review Classification  
 
 ## 📌 Dataset Description  
@@ -90,9 +91,9 @@ A deep-learning-based classification model was developed with the following arch
 
 | 🏷️ Models Used                  | 🇮🇳 Tamil Accuracy | 🇮🇳 Malayalam Accuracy |
 |----------------------------------|------------------|----------------------|
-| **BERT-Base-Multilingual-Cased** | 94%             | 94%                 |
-| **TF-IDF**                       | 81%             | 76%                 |
-| **Count Vectorizer**             | 83%             | 76%                 |
+| **BERT-Base-Multilingual-Cased** | 🟢94%             | 🟢94%                 |
+| **TF-IDF**                       | 🟡81%             | 🔴76%                 |
+| **Count Vectorizer**             | 🟡83%             | 🔴76%                 |
 | **XLM-RoBERTa-Large**            | **96%** 🔥      | **94%** 🔥          |
 
 ### 🔍 Key Observations:
