@@ -17,6 +17,74 @@ The "Shared Task on Detecting AI-generated Product Reviews in Dravidian Language
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9c04504f-dafd-45d5-9a18-4a886803f5b9" alt="Untitled Diagram-Page-1">
 </p>
+---
+# 📝 AI vs Human: Dravidian Language Review Classification  
+
+## 📌 Dataset Description  
+
+The dataset consists of **AI-generated** and **human-written** product reviews in **Malayalam** and **Tamil**. It was designed to help build models that differentiate between machine-generated and human-authored reviews.  
+
+### 🔹 Dataset Distribution  
+
+| Language   | AI-Generated Reviews | Human-Written Reviews | Total Samples |
+|------------|----------------------|----------------------|--------------|
+| **Tamil**      | 405                  | 403                  | 808          |
+| **Malayalam**  | 400                  | 400                  | 800          |
+
+📌 *Balanced datasets ensure fair evaluation of classification models.*  
+
+---
+
+## 🛠 Methodology  
+
+### 📌 1️⃣ Preprocessing  
+Each dataset entry includes:  
+✔️ A unique **ID**  
+✔️ A **textual review (transcript)**  
+✔️ A **class label** (AI-generated or human-written)  
+
+📌 **Preprocessing Steps:**  
+- ✅ **Tokenization**: Used the corresponding transformer model tokenizer.  
+- ✅ **Stopword Removal**:  
+  - Malayalam stopwords were obtained from a public repository.  
+  - Tamil stopwords were removed using **Advertools**.  
+- ✅ **Text Normalization**:  
+  - **Tamil**: Processed using **Indic NLP Library**.  
+  - **Malayalam**: Tokenized using the **indic-tokenize** package.  
+
+---
+
+### 📌 2️⃣ Feature Extraction  
+Three methods were used to extract meaningful text features:  
+
+🔹 **TF-IDF**: Converts text into numerical vectors based on word importance.  
+🔹 **Count Vectorizer**: Represents word occurrences as sparse matrices.  
+🔹 **Transformer-Based Embeddings**:  
+   - **BERT-Base-Multilingual-Cased**  
+   - **XLM-RoBERTa-Large**  
+   📌 Extracted contextual embeddings using the **mean of the last hidden state outputs**.  
+
+---
+
+### 📌 3️⃣ Classification Model  
+
+A deep-learning-based classification model was developed with the following architecture:  
+
+🔹 **Input Layer**: Tokenized text input.  
+🔹 **Hidden Layers**:  
+   - Fully connected **Dense layer** with **256 neurons** & ReLU activation.  
+   - **Batch normalization** & **Dropout (0.5)** to prevent overfitting.  
+   - Another **Dense layer** with **128 neurons** & ReLU activation, followed by batch normalization & dropout.  
+🔹 **Output Layer**:  
+   - Softmax activation for final classification.  
+
+📌 **Training Details:**  
+✔️ **Optimizer**: Adam  
+✔️ **Loss Function**: Categorical Cross-Entropy  
+✔️ **Data Split**: **80% training** | **20% testing** using `train_test_split` from Scikit-learn.  
+
+---
+
 
 ## 🏆 Model Performance Comparison
 
