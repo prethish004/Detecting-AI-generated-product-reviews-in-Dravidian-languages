@@ -106,5 +106,7 @@ A deep-learning-based classification model was developed with the following arch
 
 💡 *For best results, XLM-RoBERTa-Large is recommended for Tamil and Malayalam NLP tasks.*
 
-
+---
+## 👥 Authors
+- **Prethish GA** ([📧 Email](mailto:prethish0409@gmail.com))
 
