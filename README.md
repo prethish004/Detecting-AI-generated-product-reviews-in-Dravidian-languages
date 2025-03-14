@@ -1,5 +1,7 @@
 #  Detecting AI-Generated Product Reviews in Dravidian Languages
 
+[![DOI](https://zenodo.org/badge/902793095.svg)](https://doi.org/10.5281/zenodo.14847233)
+
 ## 🚀 Introduction
 The **Shared Task on Detecting AI-Generated Product Reviews in Dravidian Languages** focuses on addressing the rise of AI-generated product reviews in **Malayalam** and **Tamil**. As AI-generated content becomes more sophisticated, ensuring **authenticity in online reviews** is critical for consumer trust. 
 
